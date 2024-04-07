@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AVIF image on Upload
  * Plugin URI:  https://github.com/Brandonbr1/avif-convert
- * Description: A Wordpress plugin which converts files into .avif for optimal compression anf file size
+ * Description: A Wordpress plugin which converts files into .avif for optimal compression and file size.
  * Version:     1.0.0
  * Author:      Hendy Tan, Brandonbr1 and Wordpress Authors
  * Author URI:  https://github.com/icaru12 , https://github.com/Brandonbr1
