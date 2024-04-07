@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AVIF image on Upload
  * Plugin URI:  https://github.com/Brandonbr1/avif-convert
- * Description: A Wordpress plugin which converts files into .avif for optimal compression
+ * Description: A Wordpress plugin which converts files into .webp for optimal compression and small file size.
  * Version:     1.0.3
  * Author:      Hendy Tan, Brandonbr1 and Wordpress Authors
  * Author URI:  https://github.com/icaru12 , https://github.com/Brandonbr1
@@ -37,16 +37,17 @@ if ( ! function_exists( 'filter_image_editor_output_format' ) ) {
 
 	function filter_image_editor_output_format( $formats ) {
 		$formats = [
-			'image/jpeg' => 'image/avif',
-			'image/jpg' => 'image/avif',
-			'image/png' => 'image/avif',
-			'image/gif' => 'image/avif',
-			'image/webp' => 'image/avif',
-			'image/tiff' => 'image/avif',
-			'image/tif' => 'image/avif',
-			'image/bmp' => 'image/avif',
-			'image/heic' => 'image/avif',
-			'image/heif' => 'image/avif'
+			'image/jpeg' => 'image/webp',
+			'image/jpg' => 'image/webp',
+			'image/png' => 'image/webp',
+			'image/gif' => 'image/webp',
+			'image/avif' => 'image/webp',
+			'image/avifs' => 'image/webp',
+			'image/tiff' => 'image/webp',
+			'image/tif' => 'image/webp',
+			'image/bmp' => 'image/webp',
+			'image/heic' => 'image/webp',
+			'image/heif' => 'image/webp'
 			// 'image/ico' => 'image/avif' // uncomment the "//" at the beginning of the line for .ico files to be included.
 		];
 		return $formats;
