@@ -42,10 +42,10 @@ if ( ! function_exists( 'filter_image_editor_output_format' ) ) {
 			'image/png' => 'image/avif',
 			'image/gif' => 'image/avif',
 			'image/webp' => 'image/avif',
-			'image/tiff' => 'image/avif'
-			'image/tif' => 'image/avif'
-			'image/bmp' => 'image/avif'
-			'image/heic' => 'image/avif'
+			'image/tiff' => 'image/avif',
+			'image/tif' => 'image/avif',
+			'image/bmp' => 'image/avif',
+			'image/heic' => 'image/avif',
 			'image/heif' => 'image/avif'
 			// 'image/ico' => 'image/avif' // uncomment the "//" at the beginning of the line for .ico files to be included.
 		];
