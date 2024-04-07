@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: AVIF image on Upload
+ * Plugin Name: Webp image on Upload
  * Plugin URI:  https://github.com/Brandonbr1/avif-convert
  * Description: A Wordpress plugin which converts files into .webp for optimal compression and small file size.
  * Version:     1.0.0
  * Author:      Hendy Tan, Brandonbr1 and Wordpress Authors
  * Author URI:  https://github.com/icaru12 , https://github.com/Brandonbr1
- * Text Domain: avif-on-upload
+ * Text Domain: webp-on-upload
  * License:     GPLv3
  */
 
