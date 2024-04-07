@@ -36,16 +36,19 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! function_exists( 'filter_image_editor_output_format' ) ) {
 
 	function filter_image_editor_output_format( $formats ) {
-		$formats['image/jpeg'] = 'image/avif';
-		$formats['image/jpg'] = 'image/avif';
-		$formats['image/png'] = 'image/avif';
-		$formats['image/gif'] = 'image/avif';
-		$formats['image/webp'] = 'image/avif';
-		$formats['image/tiff'] = 'image/avif';
-		$formats['image/tif'] = 'image/avif';
-		$formats['image/bmp'] = 'image/avif'; 
-		$formats['image/heic'] = 'image/avif'; 
-		$formats['image/heif'] = 'image/avif'; 
+		$formats = [
+			'image/jpeg' => 'image/avif',
+			'image/jpg' => 'image/avif',
+			'image/png' => 'image/avif',
+			'image/gif' => 'image/avif',
+			'image/webp' => 'image/avif',
+			'image/tiff' => 'image/avif'
+			'image/tif' => 'image/avif'
+			'image/bmp' => 'image/avif'
+			'image/heic' => 'image/avif'
+			'image/heif' => 'image/avif'
+			// 'image/ico' => 'image/avif' // uncomment the "//" at the beginning of the line for .ico files to be included.
+		];
 		return $formats;
 	}
 	add_filter( 'image_editor_output_format', 'filter_image_editor_output_format' );
